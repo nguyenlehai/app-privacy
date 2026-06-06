@@ -48,40 +48,48 @@
     <li><strong>Anonymous usage statistics</strong> — app opens, features used, session duration. Not linked to personal identity.</li>
   </ul>
 
-  <p><strong>b) Notification data (apps with push notifications)</strong></p>
+  <p><strong>b) Account data (apps with user accounts)</strong></p>
+  <ul>
+    <li><strong>Email address</strong> — collected only when you voluntarily create an account. Used solely for authentication and account recovery. Never shared with third parties for marketing.</li>
+    <li>You may use apps without creating an account. Account creation is always optional.</li>
+  </ul>
+
+  <p><strong>c) Notification data (apps with push notifications)</strong></p>
   <ul>
     <li><strong>Push notification token</strong> — a device identifier used solely to deliver in-app notifications. Not shared with third parties for marketing.</li>
   </ul>
 
-  <p><strong>c) Advertising data (ad-supported apps only)</strong></p>
+  <p><strong>d) Advertising data (ad-supported apps only)</strong></p>
   <ul>
     <li><strong>Advertising Identifier</strong> (IDFA / Advertising ID) — used by ad networks (Google AdMob) to show relevant ads. You can limit ad tracking in your device Settings.</li>
     <li>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> for details on how AdMob handles data.</li>
   </ul>
 
-  <p><strong>d) Purchase data (apps with in-app purchases or subscriptions)</strong></p>
+  <p><strong>e) Purchase data (apps with in-app purchases or subscriptions)</strong></p>
   <ul>
     <li>All payment transactions are processed by <strong>Apple App Store</strong> or <strong>Google Play</strong>. We do not store credit card or payment information.</li>
     <li>Purchase history may be stored anonymously to support the restore purchases feature.</li>
   </ul>
 
   <div class="note">
-    We do <strong>not</strong> collect your real name, email address, phone number, or precise location unless you voluntarily provide it (e.g., via a support contact form).
+    We do <strong>not</strong> collect your real name, phone number, or precise location data, except where an app feature explicitly requires it (e.g., finding nearby locations) and you have granted permission. All such permissions are optional and can be revoked at any time.
   </div>
 
   <h2>2. How We Use Information</h2>
   <ul>
     <li>Detect and fix technical issues</li>
     <li>Improve app performance and user experience</li>
+    <li>Authenticate your account and sync your data across devices (apps with user accounts)</li>
     <li>Send reminders or updates via push notifications (only if you have granted permission)</li>
     <li>Display relevant advertisements (ad-supported apps only)</li>
     <li>Process and verify in-app purchases</li>
+    <li>Provide location-based features such as finding nearby points of interest (apps that use location)</li>
   </ul>
 
   <h2>3. Information Sharing</h2>
   <p>We do <strong>not sell or rent</strong> your information. Data is only shared with third parties in these cases:</p>
   <ul>
-    <li>Service providers listed in Section 4 (Firebase, Sentry, AdMob, RevenueCat).</li>
+    <li>Service providers listed in Section 4 (Firebase, Sentry, Supabase, AdMob, RevenueCat, Microsoft).</li>
     <li>When required by law or legal process.</li>
   </ul>
 
@@ -91,22 +99,26 @@
     <li><a href="https://firebase.google.com/policies/analytics" target="_blank" rel="noopener">Google Firebase Analytics</a> — anonymous usage statistics</li>
     <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Cloud Messaging</a> — push notifications</li>
     <li><a href="https://sentry.io/privacy/" target="_blank" rel="noopener">Sentry</a> — crash reporting</li>
+    <li><a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase</a> — backend database and authentication (apps with user accounts)</li>
     <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google AdMob</a> — advertising (ad-supported apps only)</li>
     <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a> — subscription management (apps with in-app purchases only)</li>
+    <li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener">Microsoft Azure Cognitive Services</a> — translation processing (translation apps only). Text you submit for translation is sent to Microsoft servers and subject to <a href="https://www.microsoft.com/en-us/translator/business/notrace/" target="_blank" rel="noopener">Microsoft's no-trace policy</a>.</li>
   </ul>
 
   <h2>5. Device Permissions</h2>
-  <p>Apps only request permissions when necessary:</p>
+  <p>Apps only request permissions when necessary for their core features:</p>
   <ul>
     <li><strong>Notifications</strong> — reminders and updates (optional)</li>
     <li><strong>Calendar</strong> — adding events to the system calendar (optional)</li>
-    <li><strong>Camera / Photo Library</strong> — some apps use this for content input (optional)</li>
+    <li><strong>Camera / Photo Library</strong> — used by some apps for image-based input such as scanning or OCR (optional)</li>
+    <li><strong>Microphone</strong> — used by some apps for voice input and speech-to-text translation (optional)</li>
+    <li><strong>Location</strong> — used by some apps to find nearby points of interest (e.g., nearby temples). Only requested when the feature is used and you approve the prompt (optional)</li>
     <li><strong>App Tracking Transparency (ATT)</strong> — iOS will prompt separately; you may decline</li>
   </ul>
   <p>All permissions can be revoked at any time in <strong>Settings → [App Name]</strong> on your device.</p>
 
   <h2>6. Data Storage</h2>
-  <p>User preferences and settings are stored locally on your device. Anonymous technical data is stored on third-party service providers' servers and deleted according to their respective retention policies.</p>
+  <p>User preferences and app data are stored locally on your device. For apps with user accounts, data may be synced to secure cloud servers (Supabase) to enable cross-device access. Anonymous technical data is stored on third-party service providers' servers and deleted according to their respective retention policies.</p>
 
   <h2>7. Security</h2>
   <p>We apply reasonable technical measures to protect information. However, no method of Internet transmission or electronic storage is 100% secure.</p>
